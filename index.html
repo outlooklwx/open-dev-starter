@@ -1,51 +1,113 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>OpenDev Docs - 开源项目文档站</title>
-  <meta name="description" content="OpenDev Docs 是一个个人原创的开源项目文档站，用于记录项目设计与实现过程。">
-  <style>
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('https://tuchuang.ailinya.eu.org/file/1766421797181_【哲风壁纸】党徽-共产主义接班人.png');
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      background-color: rgba(0,0,0,0.6); /* 半透明背景方便看文字 */
-      padding: 30px;
-      max-width: 900px;
-      margin: 50px auto;
-      border-radius: 10px;
-    }
-    h1 { text-align: center; font-size: 3em; margin-bottom: 20px; }
-    p { line-height: 1.6em; margin-bottom: 15px; }
-    ul { margin-top: 20px; }
-    a { color: #ffcc00; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的项目展示</title>
+    <!-- CSS 背景 & 基本样式 -->
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            background: url('https://tuchuang.ailinya.eu.org/file/1766421797181_【哲风壁纸】党徽-共产主义接班人.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* 半透明容器 */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 20px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+        }
+
+        /* 标题样式 */
+        h1, h2 {
+            text-align: center;
+            color: #ffdd57;
+        }
+
+        /* 图片样式 */
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+            display: block;
+        }
+
+        /* 链接按钮 */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #ffdd57;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ffd633;
+        }
+
+        /* 页面分隔 */
+        hr {
+            border: 1px solid #ffdd57;
+            margin: 30px 0;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>OpenDev Docs</h1>
 
-    <p>OpenDev Docs 是一个个人原创的开源项目文档站，用于记录 Web 项目的设计思路、实现过程以及使用说明。</p>
+    <!-- 首页 -->
+    <div class="container">
+        <h1>欢迎来到我的项目展示</h1>
+        <p>
+            这里展示了我近期开发的多个项目与模块，每个项目都包含详细的说明、功能亮点和更新记录。
+            我在开发过程中积累了丰富的经验，包括前端布局、响应式设计、API 调用以及 GitHub 管理。
+        </p>
+        <p>
+            首页背景图来源于 Unsplash，页面文字颜色为白色，保证可读性；容器使用半透明背景，让内容更突出。
+            每个项目模块都配有示意图片和文字说明，方便用户了解项目的整体功能。
+        </p>
+        <img src="https://tuchuang.ailinya.eu.org/file/1766421797181_【哲风壁纸】党徽-共产主义接班人.png" alt="项目示意图">
+    </div>
 
-    <p>该站点持续更新所有文档内容，包含项目概览、设计说明、安装指南以及规划更新等，目的是形成可长期维护的学习资料库。</p>
+    <hr>
 
-    <p>文档站不仅展示项目，也记录开发经验，是个人技术沉淀的重要手段。</p>
+    <!-- 项目概览页 -->
+    <div class="container">
+        <h2>项目概览</h2>
+        
+        <h3>项目一：个人博客系统</h3>
+        <p>
+            这个项目是我用 HTML、CSS 和 JavaScript 构建的个人博客系统，实现了文章发布、评论管理和响应式布局功能。
+            在开发过程中，我学习了如何使用 CSS Flexbox 和 Grid 布局，以及如何优化页面在移动端的显示效果。
+        </p>
+        <img src="https://tuchuang.ailinya.eu.org/file/1766421797181_【哲风壁纸】党徽-共产主义接班人.png?auto=format&fit=crop&w=1350&q=80" alt="博客系统截图">
+        <a class="btn" href="#">查看项目详情</a>
 
-    <ul>
-      <li><a href="docs/overview.html">项目概览</a></li>
-      <li><a href="docs/design.html">设计说明</a></li>
-      <li><a href="docs/setup.html">安装与运行</a></li>
-      <li><a href="docs/roadmap.html">规划与更新</a></li>
-      <li><a href="about.html">关于作者</a></li>
-    </ul>
-  </div>
+        <h3>项目二：在线待办清单</h3>
+        <p>
+            在线待办清单应用可以添加、删除、标记完成任务，并使用 localStorage 保存数据，实现简单的数据持久化。
+            项目中我熟悉了事件监听、DOM 操作以及浏览器本地存储的使用，提高了前端交互能力。
+        </p>
+        <img src="https://tuchuang.ailinya.eu.org/file/1766421797181_【哲风壁纸】党徽-共产主义接班人.png?auto=format&fit=crop&w=1350&q=80" alt="待办清单截图">
+        <a class="btn" href="#">查看项目详情</a>
+
+        <h3>项目三：天气预报应用</h3>
+        <p>
+            天气预报应用通过调用公开 API 获取实时天气信息，并动态更新页面内容。
+            项目让我掌握了异步请求（fetch）、JSON 数据解析和动态页面渲染的方法。
+        </p>
+        <img src="https://tuchuang.ailinya.eu.org/file/1766421797181_【哲风壁纸】党徽-共产主义接班人.png" alt="天气应用截图">
+        <a class="btn" href="#">查看项目详情</a>
+    </div>
+
 </body>
 </html>
